@@ -4,5 +4,6 @@
 
 ### 2013 - 6 - 17
 
-> 更新README文件
-> 添加部分config信息
+>
+* 更新README文件
+* 添加部分config信息
