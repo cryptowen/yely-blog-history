@@ -12,11 +12,11 @@ pygments: true
 title : 无关风月 
 tagline: 人生自是有情痴，此恨不关风与月
 author :
-  name : 胡文超
+  name : 无关风月
   email : zjuhwc@gmail.com
   github : yely
-  twitter : username
-  feedburner : feedname
+#  twitter : username
+# feedburner : feedname
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
