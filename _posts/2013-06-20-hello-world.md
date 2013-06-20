@@ -2,7 +2,7 @@
 layout: post
 title: "hello world"
 description: ""
-category: 技术
+category: tech
 tags: []
 ---
 {% include JB/setup %}
