@@ -22,3 +22,4 @@ tags: [github, blog, jekyll, markdown]
 
 在开始发布文章的时候，中文列表无法正常显示，后发现是默认markdown引擎不支持的原因，可以通过将默认的`maruku`引擎更换成github使用的引擎`rdiscount`解决
 
+具体参考： [Markdown 中文列表抽风](http://yangzetian.github.io/2012/03/28/markdown/)
