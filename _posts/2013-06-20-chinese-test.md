@@ -2,7 +2,7 @@
 layout: post
 title: "中文支持测试"
 description: ""
-category: tech
+category: 技术
 tags: [技术]
 ---
 {% include JB/setup %}
@@ -16,4 +16,7 @@ list
 
 * hello
 * world
+* wo
+* nihao
+* 你好
 
