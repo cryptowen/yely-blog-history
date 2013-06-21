@@ -1,21 +1,64 @@
 ---
 layout: page
-title: 无关风月的修行之道
-tagline: 一技之成，当尽毕生之力
+title: 无关风月
+description: "无关风月的个人博客，一些技术方面的记录，偶发一些文艺的感想。"
 ---
 {% include JB/setup %}
 
-# 无关风月的个人主页
+<table width="100%" rowspan="0" colspan="0">
+<tr>
+<td width="70%">
+	<div class="home-page-content">
+		{% for post in site.posts limit:5 %}
+		<div class="home-page-post">
+			<div class="post-header">
+				<div class="date">{{ post.date | date_to_string }}</div>
+				<div class="tags"> 
+					<label>Tags: </label>{{ post.tags | array_to_sentence_string }}
+				</div>
+				<div class="category"> 
+					<label>Category: </label>
+					<span>{{ post.category }}</span>
+				</div>
+			</div>
+			<div class="post-content">
+				<div class="title"><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></div>
+				<div class="abstract">{{ post.description | markdownify }}</div>
+				<div style="float:right;"><a href="{{ BASE_PATH }}{{ post.url }}">阅读全文</a></div>
+			</div>
+			{% if forloop.index != 5 %}
+			<div class="post-footer">&nbsp;</div>
+			{% endif %}
+		</div>
+		{% endfor %}
+	</div>
+</td>
 
-## To Do List
+<td width="30%" style="vertical-align:top;">
+	<div class="home-page-sidebar">
+		<div class="sidebar-title">文章分类</div>
+		<div>
+			<ul class="tag_box inline">
+			{% assign categories_list = site.categories %}
+			{% include JB/categories_list %}
+			</ul>
+		</div>
+		<br>
+		<div class="sidebar-title">标签</div>
+		<div>
+			<ul class="tag_box inline">
+			{% assign tags_list = site.tags %}  
+			{% include JB/tags_list %}
+			</ul>
+		</div>
+	</div>
+</td>
+</tr>
+</table>
+<hr>
+<div style="width:50%;margin-left:auto;margin-right:auto;text-align:center;clear:both;">
+	<a href="/archive.html">查看所有{{site.posts.size}}篇文章...</a>
+</div>
 
-- 微博展示
-- 豆瓣展示
-- 一键分享
-- 自动内容同步
-- 外观更改
-- 代码高亮
-- 目录更改
-	* 技术
-	* 教学
-	* 文艺	
+
+
