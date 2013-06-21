@@ -69,3 +69,8 @@ body {
 	color:#FFF;
 }
 	
+/* custom ============================================================== */
+img[alt="rss feed"] { 
+	float: right; 
+	margin-top: 5px;
+}		
